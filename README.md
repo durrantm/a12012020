@@ -1,6 +1,6 @@
 ## Get component working with Object
 
-Note: You will not be able to test with my .env file.  
+Note: You will not be able to actually test without my .env file.  
 I can supply that if needed.  
 Ideally you can figure it out without that as the issue is quite specific.
 
