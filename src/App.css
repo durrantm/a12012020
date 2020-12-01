@@ -1,0 +1,61 @@
+.App { text-align: center; }
+body { background-color: #ddd; }
+.zipInputForm {
+    align-content: center;
+    padding-top: 2vw;
+}
+.zipInput {
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+}
+.timezone {
+    font-size: medium;
+    color: grey;
+}
+#mph { font-size: small; }
+section {
+    padding: 2vw;
+    font-size: 3vw;
+}
+section#location {
+    background-color: lightblue;
+}
+section#conditions {
+    background-color: lightgray;
+}
+section#forecast {
+    background-color: lightsalmon;
+    font-size: 2vw;
+}
+.zipInput {
+    font-size: 5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+span#location-city-state {
+    font-weight: bold;
+    font-size: 4vw;
+    text-shadow: 3px 3px 1px #bb9
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  body {
+      background-color: palegoldenrod;
+  }
+  section {
+      padding: 5vw;
+      font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #ded;
+    }
+  section {
+      padding: 7vw;
+      font-size: 7vw;
+  }
+}
