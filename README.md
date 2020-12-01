@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+## Get component working with Object
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note: You will not be able to test with my .env file.  
+I can supply that if needed.  
+Ideally you can figure it out without that as the issue is quite specific.
 
-## Available Scripts
+Weather app
 
-In the project directory, you can run:
+In App.js
 
-### `yarn start`
+Lines 201 - 205 work but are clearly repetitive.  They call a simple function and get a string back
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Line: 207 This works and uses a component - better - and passes in a forecast for a day - forecast[1]
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Lines: 209-212 This is where I am stuck.  I get errors about forecast.entries and I am not sure how to pass the day in correctly through the map function to the component the way I did with one entry.
 
-### `yarn test`
+The console.log on line 137 of the old method shows:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+{day: {…}}
+day:
+app_max_temp: 35.2
+app_min_temp: 27.2
+clouds: 21
+clouds_hi: 0
+clouds_low: 21
+clouds_mid: 11
+datetime: "2020-12-02"
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+the fact that I have day within day (which you can see on line 138) is no doubt part of my confusion.
