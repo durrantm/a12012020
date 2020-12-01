@@ -16,14 +16,14 @@ Lines: 209-212 This is where I am stuck.  I get errors about forecast.entries an
 
 The console.log on line 137 of the old method shows:
 
-{day: {…}}
-day:
-app_max_temp: 35.2
-app_min_temp: 27.2
-clouds: 21
-clouds_hi: 0
-clouds_low: 21
-clouds_mid: 11
-datetime: "2020-12-02"
+    {day: {…}}
+    day:
+    app_max_temp: 35.2
+    app_min_temp: 27.2
+    clouds: 21
+    clouds_hi: 0
+    clouds_low: 21
+    clouds_mid: 11
+    datetime: "2020-12-02"
 
 the fact that I have day within day (which you can see on line 138) is no doubt part of my confusion.
